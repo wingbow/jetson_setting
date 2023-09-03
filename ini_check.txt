@@ -5,9 +5,7 @@
 sudo apt-get install -y gparted
 sudo gparted
 sudo apt install -y xrdp
-df -h
 sudo -H pip install -U jetson-stats
-sudo reboot
 sudo apt purge -y teamviewer
 git clone https://github.com/JetsonHacksNano/installSwapfile
 sudo ~/installSwapfile/installSwapfile.sh 
@@ -15,11 +13,12 @@ sudo rm -rf installSwapfile
 git clone https://github.com/JetsonHacksNano/installVSCode.git
 sudo ~/installVSCode/installVSCode.sh
 sudo rm -rf installVSCode
+rm -rf vscode-linux-deb.arm64.deb
 pip freeze > requirements.txt
+sudo reboot
 
 sudo pip3 uninstall -y numpy && pip3 install numpy==1.16.4
 sudo -H pip3 install scikit-learn
-sudo reboot
 mkdir code_test
 cd code_test
 wget https://raw.githubusercontent.com/jetsonworld/checkVersions/master/check_versions_of_TF_Keras_Pytorch.py
