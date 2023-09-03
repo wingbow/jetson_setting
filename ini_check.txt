@@ -2,6 +2,8 @@
 #2. Edit connections->wired connection> ipv4, ipv6 shared to other computers
 #3. setting for korean input https://makingrobot.tistory.com/96
 #ref https://seonghyuk.tistory.com/159
+sudo apt-get install lightdm
+sudo apt-get purge gdm3
 sudo apt-get install -y gparted
 sudo gparted
 sudo apt install -y xrdp
@@ -57,4 +59,3 @@ tf.sysconfig.get_build_info()
 git clone https://github.com/changhwanjoe/check_tensorfow-gpu
 cd check_tensorfow-gpu
 python3 check.py
-
