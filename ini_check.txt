@@ -5,20 +5,18 @@
 sudo apt-get install -y gparted
 sudo gparted
 sudo apt install -y xrdp
-sudo reboot
 df -h
 sudo -H pip install -U jetson-stats
+sudo reboot
 sudo apt purge -y teamviewer
 git clone https://github.com/JetsonHacksNano/installSwapfile
-cd installSwapfile
-./installSwapfile.sh
-cd ..
+sudo ~/installSwapfile/installSwapfile.sh 
 sudo rm -rf installSwapfile
 git clone https://github.com/JetsonHacksNano/installVSCode.git
-cd installVSCode
-./installVSCode.sh
-cd ..
+sudo ~/installVSCode/installVSCode.sh
 sudo rm -rf installVSCode
+pip freeze > requirements.txt
+
 sudo pip3 uninstall -y numpy && pip3 install numpy==1.16.4
 sudo -H pip3 install scikit-learn
 sudo reboot
@@ -60,5 +58,4 @@ tf.sysconfig.get_build_info()
 git clone https://github.com/changhwanjoe/check_tensorfow-gpu
 cd check_tensorfow-gpu
 python3 check.py
-
 
