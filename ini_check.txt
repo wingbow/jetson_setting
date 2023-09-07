@@ -4,8 +4,8 @@
 #3. setting for korean input https://makingrobot.tistory.com/96
 #4. automatic log in -> off
 
-sudo apt-get install -y lightdm
-sudo apt-get purge -y gdm3
+sudo apt-get install lightdm
+#sudo apt-get purge gdm3
 #gparted ref https://seonghyuk.tistory.com/159
 sudo apt-get install -y gparted
 sudo gparted
@@ -33,6 +33,17 @@ sudo -H pip3 install scikit-learn
 sudo apt-get install -y fonts-hack-ttf
 sudo apt install -y fonts-naver-d2coding
 #in termial -> Preference -> custom font 
+
+#optional thing(vnc setiing xrdp)
+sudo apt install -y xfce4
+sudo nano  /etc/xrdp/startwm.sh
+
+#edit startwm.sh file 
+#test -x /etc/X11/Xsession && exec /etc/X11/Xsession 
+#exec /bin/sh /etc/X11/Xsession 
+startxfce4
++
+sudo service xrdp restart
 
 python3 check_version.py
 
