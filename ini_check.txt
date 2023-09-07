@@ -23,15 +23,20 @@ rm -rf vscode-linux-deb.arm64.deb
 sudo reboot
 sudo pip3 uninstall -y numpy && pip3 install numpy==1.16.4
 sudo -H pip3 install scikit-learn
-mkdir code_test
-cd code_test
-wget https://raw.githubusercontent.com/jetsonworld/checkVersions/master/check_versions_of_TF_Keras_Pytorch.py
-python3 check_versions_of_TF_Keras_Pytorch.py
-cd ~
+
+#optional thing(D2coding install)
 #ref https://hikwail.tistory.com/27
 sudo apt-get install -y fonts-hack-ttf
 sudo apt install -y fonts-naver-d2coding
 #in termial -> Preference -> custom font 
+
+
+
+mkdir code_test
+cd code_test
+wget https://raw.githubusercontent.com/jetsonworld/checkVersions/master/check_versions_of_TF_Keras_Pytorch.py
+python3 check_version.py
+cd ~
  
 python3
 import pandas as pd
