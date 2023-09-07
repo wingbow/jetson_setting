@@ -1,3 +1,4 @@
+#0. password : jetson
 #1. setup for wifi
 #2. Edit connections->wired connection> ipv4, ipv6 shared to other computers
 #3. setting for korean input https://makingrobot.tistory.com/96
