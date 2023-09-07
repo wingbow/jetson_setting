@@ -34,8 +34,7 @@ mkdir code_test
 cd code_test
 wget https://raw.githubusercontent.com/jetsonworld/checkVersions/master/check_versions_of_TF_Keras_Pytorch.py
 python3 check_version.py
-cd ~
- 
+
 python3
 import pandas as pd
 import scipy
