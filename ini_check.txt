@@ -16,7 +16,7 @@ git clone https://github.com/JetsonHacksNano/installVSCode.git
 sudo ~/installVSCode/installVSCode.sh
 sudo rm -rf installVSCode
 rm -rf vscode-linux-deb.arm64.deb
-pip freeze > requirements.txt
+#fpip freeze > requirements.txt
 sudo reboot
 
 sudo pip3 uninstall -y numpy && pip3 install numpy==1.16.4
