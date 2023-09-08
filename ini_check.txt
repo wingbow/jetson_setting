@@ -28,25 +28,15 @@ sudo pip3 uninstall -y numpy && pip3 install numpy==1.16.4
 sudo -H pip3 install scikit-learn
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#check install 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 #optional thing(D2coding install)
 #ref https://hikwail.tistory.com/27
 sudo apt-get install -y fonts-hack-ttf
 sudo apt install -y fonts-naver-d2coding
 #in termial -> Preference -> custom font 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#optional thing(vnc setiing xrdp)
-sudo apt install -y xfce4
-sudo nano  /etc/xrdp/startwm.sh
 
-#edit startwm.sh file 
-#test -x /etc/X11/Xsession && exec /etc/X11/Xsession 
-#exec /bin/sh /etc/X11/Xsession 
-startxfce4
-+
-sudo service xrdp restart
+#check install 
 
 python3 check_version.py
 
