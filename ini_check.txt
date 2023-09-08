@@ -34,6 +34,35 @@ sudo apt-get install -y fonts-hack-ttf
 sudo apt install -y fonts-naver-d2coding
 #in termial -> Preference -> custom font 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#x11VNC server setting
+#https://tecadmin.net/setup-x11vnc-server-on-ubuntu-linuxmint/
+sudo apt-get install x11vnc 
+x11vnc -storepasswd 
+
+#test vnc server
+x11vnc -usepw -display :0 
+
+sudo nano /etc/systemd/system/x11vnc.service 
+
+[Unit]
+Description=Start X11VNC at startup.
+After=multi-user.target
+ 
+[Service]
+Type=simple
+ExecStart=/usr/bin/x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth /home/jetson/.vnc/passwd -rfbport 5900 -shared
+ 
+[Install]
+WantedBy=multi-user.target
+
+sudo systemctl daemon-reload
+sudo systemctl enable x11vnc.service 
+sudo systemctl start x11vnc.service 
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 #fpip freeze > requirements.txt
 
 
