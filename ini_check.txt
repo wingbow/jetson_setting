@@ -8,7 +8,8 @@
 #ref https://ubunlog.com/ko/5-gestores-de-inicio-de-sesion-y-como-cambiar-el-que-usas/
 sudo apt-get install -y lightdm
 sudo apt-get install -y lxdm
-#sudo dpkg-reconfigure lightdm
+sudo reboot
+sudo dpkg-reconfigure lightdm
 #gparted ref https://seonghyuk.tistory.com/159
 sudo apt-get install -y gparted
 sudo gparted
