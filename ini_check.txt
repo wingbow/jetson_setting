@@ -33,7 +33,6 @@ sudo -H pip3 install scikit-learn
 sudo apt-get install -y fonts-hack-ttf
 sudo apt install -y fonts-naver-d2coding
 #in termial -> Preference -> custom font 
-#setuptools (39.0.1)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -61,7 +60,10 @@ WantedBy=multi-user.target
 sudo systemctl daemon-reload
 sudo systemctl enable x11vnc.service 
 sudo systemctl start x11vnc.service 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sudo update 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #fpip freeze > requirements.txt
