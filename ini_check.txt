@@ -4,6 +4,10 @@
 #3. setting for korean input https://makingrobot.tistory.com/96
 #4. automatic log in -> off
 
+#dispaly manager
+#ref https://ubunlog.com/ko/5-gestores-de-inicio-de-sesion-y-como-cambiar-el-que-usas/
+#sudo dpkg-reconfigure lxdm
+#sudo dpkg-reconfigure
 sudo apt-get install lightdm
 #sudo apt-get purge gdm3
 #gparted ref https://seonghyuk.tistory.com/159
