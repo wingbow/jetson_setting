@@ -1,10 +1,31 @@
 conda create -y -n jetson python=3.6.9
 conda activate jetson
-pip3 install matplotlib==2.1.1
+pip3 install matplotlib==3.0.0
 pip3 install tensorflow==2.4.1
 pip3 install keras==2.4.0
 pip3 install scikit-learn==0.24.2
 pip3 install opencv-python==4.5.3.56
+pip3 install pandas==0.24.2
+pip3 install mlxtend==0.19.0
 pip3 install torch==1.9.0+cpu torchvision==0.10.0+cpu torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
 
 # https://pytorch.org/get-started/previous-versions/
+
+import cv2
+import matplotlib as plt
+import tensorflow as tf
+import tensorflow.keras as keras
+import pandas as pd
+import sklearn
+import mlxtend 
+import torch
+
+plt.__version__
+tf.__version__
+keras.__version__
+sklearn.__version__
+cv2.__version__
+pd.__version__
+mlxtend.__version__
+torch.__version__
+
