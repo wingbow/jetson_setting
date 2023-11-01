@@ -27,6 +27,11 @@ sudo reboot
 sudo pip3 uninstall -y numpy && pip3 install numpy==1.16.4
 sudo -H pip3 install scikit-learn
 
+
+#mysql 서버
+#https://sikaleo.tistory.com/21
+sudo apt-get install mysql-server 
+sudo apt-get install mysql-workbench
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #optional thing(D2coding install)
 #ref https://hikwail.tistory.com/27
