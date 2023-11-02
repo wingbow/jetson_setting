@@ -32,6 +32,8 @@ sudo -H pip3 install scikit-learn
 #https://sikaleo.tistory.com/21
 sudo apt-get install mysql-server 
 sudo apt-get install mysql-workbench
+
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #optional thing(D2coding install)
 #ref https://hikwail.tistory.com/27
