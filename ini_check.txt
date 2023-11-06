@@ -34,6 +34,10 @@ sudo apt-get install mysql-server
 sudo apt-get install mysql-workbench
 
 
+#arduino IDE
+git clone https://github.com/JetsonHacksNano/installArduinoIDE
+cd installArduinoIDE
+./installArduinoIDE.sh
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #optional thing(D2coding install)
 #ref https://hikwail.tistory.com/27
